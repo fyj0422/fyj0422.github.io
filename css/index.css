@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    height: 80px;
+    background: linear-gradient(to right, red, skyblue, gold, purple);
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+}
+
+span {
+    position: relative;
+    color: yellow;
+}
+span:before{
+    content: attr(text);
+    position: absolute;
+    z-index: 10;
+    color:pink;
+    -webkit-mask:linear-gradient(to left, red, transparent );
+}
